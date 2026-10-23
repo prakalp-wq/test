@@ -15,6 +15,10 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
+      - name: Make setup_android.sh executable
+        run: chmod +x ./setup_android.sh
+      - name: Run setup script
+        run: ./setup_android.sh
       - run: ./setup_android.sh
       - uses: actions/upload-artifact@v4
         with:
