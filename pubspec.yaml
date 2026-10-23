@@ -1,0 +1,16 @@
+name: gemma_chat
+description: On-device Gemma 4 chat app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_edge_ai: ^2.5.1
+  flutter_edge_ai_litertlm: ^1.17.0
+
+flutter:
+  uses-material-design: true
